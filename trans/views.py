@@ -9,4 +9,4 @@ def hello(request):
     html="<html><body>Hello world!</body></html>"
     return HttpResponse(html)
 def test(request):
-    return render(request,'templates/test.html')
+    return render(request,'./templates/test.html')

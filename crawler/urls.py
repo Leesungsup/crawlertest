@@ -22,4 +22,4 @@ urlpatterns = [
     path('trans/',include('trans.urls')),
     path('',hello),
     path('test/',test)
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

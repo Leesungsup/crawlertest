@@ -18,5 +18,5 @@ from whitenoise import WhiteNoise
 from my_project import MyWSGIApp
 application = MyWSGIApp()
 application = WhiteNoise(application, root='/web/crawler')
-application.add_files('/web/crawler/templates/', prefix='more-files/')
-application.add_files('/web/crawler/trans/templates/', prefix='more-files/')
+application.add_files('/web/crawler/templates/', prefix='')
+application.add_files('/web/crawler/trans/templates/', prefix='')

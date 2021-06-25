@@ -17,9 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 from .views import *
+from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('trans/',include('trans.urls')),
     path('',hello),
     path('test/',test)
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
